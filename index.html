@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo App</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do App <img src="images/pngwing.com.png" /></h2>
+        <div class="row">
+          <input
+            class="input"
+            id="input_todo"
+            type="text"
+            placeholder="Enter Your Todos"
+            autocomplete="off"
+            autofocus
+          />
+          <button onclick="addTodo()">AddTodo</button>
+        </div>
+        <div class="task_board">
+          <span class="list_bar">
+            <btn class="all_Todos_btn" id="all_Todos" onclick="showAllTodos()"
+              >All</btn
+            >
+            <btn class="pending_btn" id="pending" onclick="showPendingTodo()"
+              >Pending</btn
+            >
+            <btn
+              class="completed_btn"
+              id="completed"
+              onclick="showCompletedTodo()"
+              >Completed</btn
+            >
+          </span>
+          <br />
+          <div id="todos_container" class="todos_container">
+            <!-- <div class="todo" id="0">
+              <i class="bi bi-circle"></i>
+              <i class="bi bi-check-circle-fill"></i>
+              <p class="checked">Brush your teeth</p>
+              <i class="bi bi-pencil-square"></i>
+              <i class="bi bi-trash"></i>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
